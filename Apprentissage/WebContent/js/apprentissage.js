@@ -28,7 +28,7 @@ function calculeScores() {
 	ea=Number($("#point4").html())+Number($("#point12").html())+Number($("#point24").html())+Number($("#point28").html())+Number($("#point32").html())+Number($("#point36").html());
 	ca_moins_ec=ca-ec;
 	ea_moins_or=ea-or;
-	console.log("ca_moins_ec : "+ca_moins_ec);
+	console.log("ca_moins_ec : "+ca_moins_ec);//ajoute cette différence dans la console javascript
 	console.log("ea_moins_or : "+ea_moins_or);
 	var profil="";
 	if (ca_moins_ec>=3 && ea_moins_or>=3) {profil="Convergent";}
@@ -46,7 +46,7 @@ function calculeScores() {
 
 function afficheProfil() {
 	profil=$("#profil").html();
-	location.href="./#"+profil;
+	location.href="./index.html#"+profil;
 }
 
 
