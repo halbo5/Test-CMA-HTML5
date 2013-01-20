@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ma manière d'apprendre</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.mobile-1.2.0.min.js"></script>
+<script src="js/jquery.fbjlike.1.4.js"></script>
+<script src="js/jquery.ga.js"></script>
+<script src="js/jquery.gplusone.1.1.js"></script>
+<script src="js/jquery.twitterbutton.1.1.js"></script>
+<script src="js/apprentissage.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile-1.2.0.min.css" />
+<link rel="stylesheet" href="css/apprentissage.css" />
+</head>
+<body>
+
+
+<!-- Intro -->
+
+
+<div data-role="page" data-theme="b" id="intro" class="page">
+<div data-role="header" data-theme="b">
+<h1>Ma manière d'apprendre</h1>
+</div>
+<div data-role="content">
+<p class="texte">Vous allez parcourir 9 écrans avec à chaque fois 4 mots. Vous devez classer les mots de chaque écran en affectant d'un 4 le mot qui caractérise le mieux votre mode d'apprentissage, puis un 3 pour le mot suivant, jusqu'à 1 pour le mot qui vous caractérise le moins bien lorsque vous êtes en train d'apprendre.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#page1" data-role="button">Continuer</a>
+<a href="#explications" data-role="button">Explications</a>
+<a href="#apropos" data-role="button">A propos</a>
+</div>
+</div>
+
+
+<!-- série de mots 1 -->
+
+
+<div data-role="page" data-theme="b" id="page1" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 1</h1>
+</div>
+<div data-role="content">
+<p class="texte">Cliquez sur un mot pour affecter <span id="affecter1">4</span> point<span id="pluriel1">s</span></p>
+<div id="ligne1" class="ligne">
+<div id="mot1" class="mot">différencier</div>
+<div id="point1" class="point"></div>
+</div>
+<div id="ligne2" class="ligne">
+<div id="mot2" class="mot">essayer</div>
+<div id="point2" class="point"></div>
+</div>
+<div id="ligne3" class="ligne">
+<div id="mot3" class="mot">s'impliquer</div>
+<div id="point3" class="point"></div>
+</div>
+<div id="ligne4" class="ligne">
+<div id="mot4" class="mot">être pratique</div>
+<div id="point4" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page2" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 2 -->
+
+
+<div data-role="page" data-theme="b" id="page2" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 2</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter2">4</span> point<span id="pluriel2">s</span></p>
+<div id="ligne5" class="ligne">
+<div id="mot5" class="mot">réceptif</div>
+<div id="point5" class="point"></div>
+</div>
+<div id="ligne6" class="ligne">
+<div id="mot6" class="mot">logique</div>
+<div id="point6" class="point"></div>
+</div>
+<div id="ligne7" class="ligne">
+<div id="mot7" class="mot">méthodique</div>
+<div id="point7" class="point"></div>
+</div>
+<div id="ligne8" class="ligne">
+<div id="mot8" class="mot">impartial</div>
+<div id="point8" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page3" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 3 -->
+
+
+<div data-role="page" data-theme="b" id="page3" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 3</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter3">4</span> point<span id="pluriel3">s</span></p>
+<div id="ligne9" class="ligne">
+<div id="mot9" class="mot">ressentir</div>
+<div id="point9" class="point"></div>
+</div>
+<div id="ligne10" class="ligne">
+<div id="mot10" class="mot">faire attention</div>
+<div id="point10" class="point"></div>
+</div>
+<div id="ligne11" class="ligne">
+<div id="mot11" class="mot">réfléchir</div>
+<div id="point11" class="point"></div>
+</div>
+<div id="ligne12" class="ligne">
+<div id="mot12" class="mot">faire</div>
+<div id="point12" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page4" data-role="button">Continuer</a></div>
+</div>
+
+
+
+<!-- série de mots 4 -->
+
+
+<div data-role="page" data-theme="b" id="page4" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 4</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter4">4</span> point<span id="pluriel4">s</span></p>
+<div id="ligne13" class="ligne">
+<div id="mot13" class="mot">accepter</div>
+<div id="point13" class="point"></div>
+</div>
+<div id="ligne14" class="ligne">
+<div id="mot14" class="mot">prendre des risques</div>
+<div id="point14" class="point"></div>
+</div>
+<div id="ligne15" class="ligne">
+<div id="mot15" class="mot">évaluer</div>
+<div id="point15" class="point"></div>
+</div>
+<div id="ligne16" class="ligne">
+<div id="mot16" class="mot">prendre conscience</div>
+<div id="point16" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page5" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 5 -->
+
+
+<div data-role="page" data-theme="b" id="page5" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 5</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter5">4</span> point<span id="pluriel5">s</span></p>
+<div id="ligne17" class="ligne">
+<div id="mot17" class="mot">intuitif</div>
+<div id="point17" class="point"></div>
+</div>
+<div id="ligne18" class="ligne">
+<div id="mot18" class="mot">productif</div>
+<div id="point18" class="point"></div>
+</div>
+<div id="ligne19" class="ligne">
+<div id="mot19" class="mot">logique</div>
+<div id="point19" class="point"></div>
+</div>
+<div id="ligne20" class="ligne">
+<div id="mot20" class="mot">interrogateur</div>
+<div id="point20" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page6" data-role="button">Continuer</a></div>
+</div>
+
+
+
+<!-- série de mots 6 -->
+
+
+<div data-role="page" data-theme="b" id="page6" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 6</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter6">4</span> point<span id="pluriel6">s</span></p>
+<div id="ligne21" class="ligne">
+<div id="mot21" class="mot">abstrait</div>
+<div id="point21" class="point"></div>
+</div>
+<div id="ligne22" class="ligne">
+<div id="mot22" class="mot">observateur</div>
+<div id="point22" class="point"></div>
+</div>
+<div id="ligne23" class="ligne">
+<div id="mot23" class="mot">concret</div>
+<div id="point23" class="point"></div>
+</div>
+<div id="ligne24" class="ligne">
+<div id="mot24" class="mot">actif</div>
+<div id="point24" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page7" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 7 -->
+
+
+<div data-role="page" data-theme="b" id="page7" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 7</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter7">4</span> point<span id="pluriel7">s</span></p>
+<div id="ligne25" class="ligne">
+<div id="mot25" class="mot">orienté vers le présent</div>
+<div id="point25" class="point"></div>
+</div>
+<div id="ligne26" class="ligne">
+<div id="mot26" class="mot">réfléchissant</div>
+<div id="point26" class="point"></div>
+</div>
+<div id="ligne27" class="ligne">
+<div id="mot27" class="mot">orienté vers le futur</div>
+<div id="point27" class="point"></div>
+</div>
+<div id="ligne28" class="ligne">
+<div id="mot28" class="mot">pragmatique</div>
+<div id="point28" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page8" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 8 -->
+
+
+<div data-role="page" data-theme="b" id="page8" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 8</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter8">4</span> point<span id="pluriel8">s</span></p>
+<div id="ligne29" class="ligne">
+<div id="mot29" class="mot">partir de son expérience</div>
+<div id="point29" class="point"></div>
+</div>
+<div id="ligne30" class="ligne">
+<div id="mot30" class="mot">observer</div>
+<div id="point30" class="point"></div>
+</div>
+<div id="ligne31" class="ligne">
+<div id="mot31" class="mot">penser</div>
+<div id="point31" class="point"></div>
+</div>
+<div id="ligne32" class="ligne">
+<div id="mot32" class="mot">expérimenter</div>
+<div id="point32" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#page9" data-role="button">Continuer</a></div>
+</div>
+
+
+<!-- série de mots 9 -->
+
+
+<div data-role="page" data-theme="b" id="page9" class="page">
+<div data-role="header" data-theme="b">
+<h1>Série de mots 9</h1>
+</div>
+<div data-role="content">
+<p class="ligne">Cliquez sur un mot pour affecter <span id="affecter9">4</span> point<span id="pluriel9">s</span></p>
+<div id="ligne33" class="ligne">
+<div id="mot33" class="mot">intense</div>
+<div id="point33" class="point"></div>
+</div>
+<div id="ligne34" class="ligne">
+<div id="mot34" class="mot">réservé</div>
+<div id="point34" class="point"></div>
+</div>
+<div id="ligne35" class="ligne">
+<div id="mot35" class="mot">rationnel</div>
+<div id="point35" class="point"></div>
+</div>
+<div id="ligne36" class="ligne">
+<div id="mot36" class="mot">responsable</div>
+<div id="point36" class="point"></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b"><a href="#scores" data-role="button" id="btn_calculer">Calculer</a></div>
+</div>
+
+
+<!-- Scores -->
+
+
+<div data-role="page" data-theme="b" id="scores" class="page">
+<div data-role="header" data-theme="b">
+<h1>Scores</h1>
+</div>
+<div data-role="content" class="ligne">
+<h2>Mode d'apprentissage</h2>
+<p class="texte">Découvrez vos modes d'apprentissages dominants :</p>
+<p class="texte"><a href="#description_ec" data_role="button" id="btn_ec">Expérience concrète</a> : <span id="score_ec"></span> points.</p>
+<p class="texte"><a href="#description_or" data_role="button" id="btn_or">Observation réfléchie</a> : <span id="score_or"></span> points.</p>
+<p class="texte"><a href="#description_ca" data_role="button" id="btn_ca">Conceptualisation abstraite</a> : <span id="score_ca"></span> points.</p>
+<p class="texte"><a href="#description_ea" data_role="button" id="btn_ea">Expérimentation active</a> : <span id="score_ea"></span> points.</p>
+<h2>Profil d'apprentissage</h2>
+<p class="texte">Le profil indique dans quelle mesure vous privilégiez une approche abstraite plutôt que concrète et l'action plutôt que la réflexion.</p>
+<p class="texte">Votre profil : <a href="#" data_role="button" id="btn_profil"><span id="profil">Impossible à déterminer</span></a>.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#explications" data-role="button">Explications</a>
+<a href="#partager" data-role="button">Partager</a>
+</div>
+</div>
+
+
+
+
+<!-- expérience concrète -->
+
+
+<div data-role="page" data-theme="b" id="description_ec" class="page">
+<div data-role="header" data-theme="b">
+<h1>Expérience concrète</h1>
+</div>
+<div data-role="content" class="texte">
+<p>L'expérience concrète correspond à une approche de l'apprentissage basée sur la réceptivité et l'expérience,
+ce qui dépend essentiellement de jugements inspirés par le sentiment. Des sujets à score élevé dans cette approche ont tendance à être empathiques et orientés vers les autres. Ils trouvent en général que les
+apports théoriques sont sans utilité et préfèrent traiter chaque situation comme un cas unique. Ils
+apprennent mieux à partir d'exemples particuliers dans lesquels ils peuvent être engagés. Dans
+leur approche de l'apprentissage, des sujets qui privilégient l'expérience concrète s'orientent davantage vers leurs pairs que vers les autorités et ils tirent davantage de l'échange et de la
+discussion avec les sujets qui sont eux aussi à dominante "Expérience Concrète".</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+<!-- conceptualisation abstraite -->
+
+
+<div data-role="page" data-theme="b" id="description_ca" class="page">
+<div data-role="header" data-theme="b">
+<h1>Conceptualisation abstraite</h1>
+</div>
+<div data-role="content" class="texte">
+<p>La conceptualisation abstraite correspond à une approche analytique et conceptuelle de l'apprentissage qui est en
+rapport avec la pensée logique et l'évaluation rationnelle. Des sujets à score élevé en "conceptualisation abstraite"
+s'intéressent aux objets et aux symboles plus qu'aux personnes. Ils apprennent mieux dans des situations d'apprentissage structurés de manière autoritaire et impersonnelle qui mettent l'accent
+sur la théorie et l'analyse systématique. Ils sont frustrés par des démarches non structurées
+d'apprentissage par découverte, comme des exercices et des simulations et ils en tirent peu de
+bénéﬁce.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- Expérimentation active -->
+
+
+<div data-role="page" data-theme="b" id="description_ea" class="page">
+<div data-role="header" data-theme="b">
+<h1>Expérimentation active</h1>
+</div>
+<div data-role="content" class="texte">
+<p>"L'expérimentation active" indique une orientation vers un apprentissage par l'action, basé sur l'expérimentation.
+ Des sujets au score élevé en "Expérimentation Réfléchie" apprennent mieux lorsqu'ils peuvent s'engager
+dans des projets, du travail à la maison ou des discussions en petits groupes. Ils n'aiment pas les
+situations d'apprentissage passives comme les cours. Ces sujets ont tendance à être extravertis.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- Observation réfléchie -->
+
+
+<div data-role="page" data-theme="b" id="description_or" class="page">
+<div data-role="header" data-theme="b">
+<h1>Observation réfléchie</h1>
+</div>
+<div data-role="content" class="texte">
+<p>"L'observation réfléchie" indique une approche de l'apprentissage basée sur l'expérimentation, conduite de
+manière impartiale et réﬂéchie. Des sujets au score élevé en "Observation réfléchie" se basent beaucoup sur une
+observation minutieuse pour formuler un jugement et préfèrent des situations d'apprentissage
+comme des exposés qui leur permettent d'adopter le rôle d'observateur impartial et objectif. Ces
+sujets ont tendance à être introvertis.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- Convergent -->
+
+
+<div data-role="page" data-theme="b" id="Convergent" class="page">
+<div data-role="header" data-theme="b">
+<h1>Convergent</h1>
+</div>
+<div data-role="content" class="texte">
+<p>Les aptitudes d'apprentissage dominantes du convergent sont la conceptualisation
+abstraite et l'expérimentation active. La force la plus importante de ce type de sujet
+réside dans l'application pratique des idées. Une personne ayant ce style semble le mieux réussir
+dans des situations analogues aux tests d'intelligence, où il n'y a qu'une réponse correcte ou
+solution à une question ou un problème. La connaissance de cette personne est organisée de telle
+sorte qu'elle peut se centrer sur des problèmes spéciﬁques en utilisant une pensée hypothético-déductive.
+La recherche concernant ce mode d'apprentissage montre que les convergents sont
+relativement peu émotifs, préférant s'occuper de choses plutôt que de personnes. Ils ont des
+intérêts techniques étroits et cherchent à se spécialiser en sciences physiques. Ce mode
+d'apprentissage est caractéristique de bon nombre d'ingénieurs.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+<a href="#profils" data-role="button" id="btn_profils">Les profils</a>
+</div>
+</div>
+
+
+<!-- Divergent -->
+
+
+<div data-role="page" data-theme="b" id="Divergent" class="page">
+<div data-role="header" data-theme="b">
+<h1>Divergent</h1>
+</div>
+<div data-role="content" class="texte">
+<p>Le divergent a des possibilités d'apprentissage opposées à celles du convergent. Un tel
+sujet est le plus à l'aise dans une situation d'expérience concrète et d'observation
+réﬂéchie. Sa force réside dans l'imagination. Il parvient très bien à percevoir des situations
+concrètes en adoptant des perspectives variées. Nous avons appelé ce style divergent car une
+personne ayant ce mode d'apprentissage réussit mieux dans des situations qui supposent la
+création d'idées comme par exemple des sessions de brainstorming. La recherche montre que les
+divergents s'intéressent à autrui et font preuve d'imagination et d'émotion. Ils ont des intérêts
+culturels étendus et tendent à se spécialiser dans le domaine artistique. Ce mode est
+caractéristique de sujets ayant fait des études littéraires et artistiques. Les conseillers, les
+spécialistes du développement, les chefs du personnel sont souvent caractérisés par ce mode d'apprentissage.
+</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+<a href="#profils" data-role="button" id="btn_profils">Les profils</a>
+</div>
+</div>
+
+
+<!-- Assimilateur -->
+
+
+<div data-role="page" data-theme="b" id="Assimilateur" class="page">
+<div data-role="header" data-theme="b">
+<h1>Assimilateur</h1>
+</div>
+<div data-role="content" class="texte">
+<p>Un assimilateur a des aptitudes d'apprentissage dans le domaine de la conceptualisation
+abstraite et de l'observation réﬂéchie. Une telle personne a surtout des possibilités
+dans le domaine de la création des modèles théoriques. Elle réussit particulièrement bien dans le
+domaine du raisonnement inductif et dans l'organisation d'observations disparates en une
+explication cohérente. Elle est, comme le convergent, moins intéressée par les autres que par les
+concepts abstraits ; mais elle se sent moins concernée par l'emploi pratique des théories. Pour un
+tel sujet, il est plus important que la théorie soit satisfaisante d'un point de vue logique ; dans une
+situation dans laquelle une théorie ne s'accommoderait pas aux faits, l'assimilateur aurait plutôt
+tendance à négliger ou a réexaminer les faits. Ce mode d'apprentissage est plutôt caractéristique
+des sciences de base et des mathématiques que des sciences appliquées. On trouve ce mode
+d'apprentissage chez les praticiens de la recherche ou de la planiﬁcation.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+<a href="#profils" data-role="button" id="btn_profils">Les profils</a>
+</div>
+</div>
+
+
+<!-- Accomodateur -->
+
+
+<div data-role="page" data-theme="b" id="Accomodateur" class="page">
+<div data-role="header" data-theme="b">
+<h1>Accomodateur</h1>
+</div>
+<div data-role="content" class="texte">
+<p>Un accommodateur a des orientations opposées à celles de l'assimilateur. Il réussit mieux
+dans les domaines de l'expérience concrète et de l'expérimentation active. Il est
+surtout capable de réaliser des choses — en mettant en pratique des plans et des expériences - et
+de s'engager dans de nouvelles expériences. Il a tendance à prendre davantage de risques que les
+sujets caractéristiques des trois autres catégories. On a retenu le terme accommodateur car un tel
+sujet réussit particulièrement bien dans des situations ou il s'agit de s'adapter à des circonstances
+spéciﬁques. Dans des situations dans lesquelles une théorie ne correspond pas aux faits, cette
+personne remet le plan ou la théorie en question. Elle a tendance à résoudre les problèmes d'une
+manière intuitive par essai et erreur, s'appuyant plus sur l'information des autres que sur leur
+aptitude à l'analyse. Elle est à l'aise avec les autres mais est souvent perçue comme impatiente et
+brusque. Sa formation se situe souvent dans le domaine technique ou pratique comme les
+affaires. On retrouve des personnes ayant ce mode d'apprentissage dans des métiers orientés vers
+l'action, comme les métiers du commerce.
+</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+<a href="#profils" data-role="button" id="btn_profils">Les profils</a>
+</div>
+</div>
+
+
+<!-- Explications -->
+
+
+<div data-role="page" data-theme="b" id="explications" class="page">
+<div data-role="header" data-theme="b">
+<h1>Explications</h1>
+</div>
+<div data-role="content" class="texte">
+<p>L'objectif de ce test est de décrire votre manière d'apprendre. Certains choix de mot pour décrire votre manière d'apprendre peuvent sembler difficile, mais gardez bien à l'esprit qu'il ne s'agit pas d'une évaluation.
+Il n'y a pas de réponse juste ou fausse. Le test CMA (Caractéristiques du Mode d'Apprentissage) mesure votre orientation relative aux quatres formes d'apprentissage que sont l'expérience concrète, l'observation réfléchie, la conceptualisation abstraite et l'expérimentation active.
+</p>
+<p>Vous obtenez des scores pour chacune de ces formes d'apprentissages. Vous verrez alors quelles sont vos manières d'apprendre dominantes. Mais personne n'apprend d'une seule manière. Vous vous reconnaitrez peut-être dans plusieurs de ces formes d'apprentissage.</p>
+<p>Pour affiner un peu, nous déterminons votre profil à partir de ces scores afin de voir si vous privilégiez l'abstrait par rapport au concret, ou encore l'expérimentation par rapport à la réflexion.</p>
+
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- A propos -->
+
+
+<div data-role="page" data-theme="b" id="apropos" class="page">
+<div data-role="header" data-theme="b">
+<h1>A propos</h1>
+</div>
+<div data-role="content" class="texte">
+<p>Cette application se base sur le test CMA (Caractéristiques du Mode d'Apprentissage) de Berbaum, lui-même inspiré
+de Kolb, D.A. (1976). <i>The learning style inventory : technical manual</i>. Boston, Mc Ber and Company.</p>
+<p>Elle a été réalisée d'après des documents de Pascal Marquet, Université de Strasbourg.</p>
+<p>Développeur : Alain Bolli</p>
+<p>Contact : alain.bolli@gmail.com</p>
+<p>L'application est utilisable sur Internet à l'adresse http://www.bolli.fr/cma ou en téléchargeant l'application Android sur Google Play : Test CMA</p>
+<p>Aucune donnée liée au test n'est enregistrée. Seules des statistiques de fréquentation sont conservées à l'aide de Google Analytics.</p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- Les 4 profils -->
+
+
+<div data-role="page" data-theme="b" id="profils" class="page">
+<div data-role="header" data-theme="b">
+<h1>Les 4 profils types</h1>
+</div>
+<div data-role="content" class="texte">
+<p><a href="#Divergent" data-role="button">Divergent</a></p>
+<p><a href="#Convergent" data-role="button">Convergent</a></p>
+<p><a href="#Assimilateur" data-role="button">Assimilateur</a></p>
+<p><a href="#Accomodateur" data-role="button">Accomodateur</a></p>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+<!-- Partager sur Facebook, Google+1 et twitter -->
+
+
+<div data-role="page" data-theme="b" id="partager" class="page">
+<div data-role="header" data-theme="b">
+<h1>Partager</h1>
+</div>
+<div data-role="content" class="texte">
+<div class="fbjlike-content" style="display:none;font-size:120%;color:#336633;">Merci d'aimer cette page !</div>
+<div id="twitterbutton"></div><div id="gplusone"></div><div id="fbjlike"></div>
+</div>
+<div data-role="footer" data-theme="b">
+<a href="#intro" data-role="button" id="btn_accueil">Accueil</a>
+<a href="#scores" data-role="button" id="btn_score">Scores</a>
+</div>
+</div>
+
+
+</body>
+</html>
