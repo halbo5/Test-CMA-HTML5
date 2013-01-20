@@ -45,6 +45,7 @@ function calculeScores() {
 }
 
 function afficheProfil() {
+	//affiche la page avec la description de son profil
 	profil=$("#profil").html();
 	location.href="./index.html#"+profil;
 }
