@@ -45,7 +45,6 @@ function calculeScores() {
 }
 
 function afficheProfil() {
-	//affiche la page avec la description de son profil
 	profil=$("#profil").html();
 	location.href="./index.html#"+profil;
 }
@@ -53,6 +52,15 @@ function afficheProfil() {
 
 $( document ).ready( function() {
 	 
+	  //largeur du menu de bas de page = largeur de la page
+	  var largeur=$(window).width();
+	  $(".localnav").css("width",largeur);
+	  //On modifie la largeur du footer quand on redimensionne la page
+	  $(window).resize(function(event) {
+		  largeur=$(window).width();
+		  $(".localnav").css("width",largeur);
+	  });
+	  
 	  $("div.mot").click(function(event) {
 		 point=affichePoints(this,point);
 	  });
@@ -89,8 +97,8 @@ $( document ).ready( function() {
 			hideafterlike:false,
 			googleanalytics:false,	//true|false
 			//googleanalytics_obj: 'pageTracker',	//pageTracker|_gaq
-			onlike: function(response){$('.fbjlike-content').show('fade');$.cookie('liked','liked');},
-			onunlike: function(response){$('.fbjlike-content:visible').hide('fade');$.cookie('liked','unliked');}
+			onlike: "$.cookie('liked','liked');",
+			onunlike: "$.cookie('liked','unliked');"
 	  });
 	  
 	  //bouton google+1

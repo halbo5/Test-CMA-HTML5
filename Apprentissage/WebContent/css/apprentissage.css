@@ -52,8 +52,8 @@
 	width:300px;
 	display:block;
 	overflow:visible;
-
 }
+
 	
 .page {
   	margin-left:auto;
@@ -67,6 +67,22 @@
 	float:left;
 }
 
-#fbjlike {
-	z-index:2;
-}	
+.localnav {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
+	}
+
+.footer {
+	position:absolute;
+	bottom:0;
+		
+	}
+	
+.ui-controlgroup-controls {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
