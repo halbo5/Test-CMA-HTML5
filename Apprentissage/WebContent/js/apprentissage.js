@@ -46,7 +46,7 @@ function calculeScores() {
 
 function afficheProfil() {
 	profil=$("#profil").html();
-	location.href="./index.html#"+profil;
+	location.href="./cma.html#"+profil;
 }
 
 

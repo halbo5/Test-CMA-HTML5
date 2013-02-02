@@ -1,0 +1,18 @@
+#frame {
+	margin-left:20px;
+	width:350px;
+	height:600px;
+}
+.colonne2 {
+	width:45%;
+	margin:10px;
+	float:left;
+}
+
+.codeqr {
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	width:300px;
+	height:300px;
+}
